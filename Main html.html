@@ -19,7 +19,7 @@
             margin: 0; padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-            scroll-padding-top: 110px;
+            scroll-padding-top: 140px;
         }
        
 
@@ -74,14 +74,24 @@
         }
 
 
-
         /* Header */
+        .header{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10000;
+            background: white;
+        }
+
+        /* Logo */
         .navbar{
-           
             border-bottom: 3px solid green;
             border-top: 3px solid white;
             font-family: calibri;
-            position: fixed;
+            position: relative;
             background-color: white;
             z-index: 10000;
             padding: 10px 0;
@@ -113,7 +123,8 @@
 
         /* List and its Content*/
         .listbar{
-            margin-top: 105px;
+            position: relative;
+            width: 100%;
             border-bottom: 3px solid green;
             background-color: rgb(83, 139, 69);
             z-index: 1;
@@ -335,7 +346,7 @@
             /*flex-direction: column;*/
             justify-content: center;
             align-items: center;
-            gap: 100px;
+            gap: 50px;
             color: rgb(0, 0, 0);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 30px;
@@ -363,7 +374,7 @@
             display: flex;
         }
         .mission-vision-info a{
-            margin: 40px;
+            margin: 30px;
             font-size: 80%;
         }
         .m-v{
@@ -433,6 +444,7 @@
         .values p{
             font-weight: lighter;
             margin: 15px;
+            font-size: 25px;
         }
         .values h3{
             font-weight: bold;
@@ -486,8 +498,9 @@
             border-radius: 5px;
         }
         .academic-info{
-            padding: 80px 20px;
+            padding: 50px 20px;
             background: #ebebeb;
+            border-bottom: 3px solid #2d692f;
         }
         .academic-part{
             display: none;
@@ -495,7 +508,7 @@
             font-weight: bold;
             text-align: left;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 30px;
+            font-size: 25px;
             scroll-padding-top: 0 !important;
             scroll-margin-top: 220px !important;
         }
@@ -622,7 +635,7 @@
         .app-1 h1{
             text-align: left;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 50px;
+            font-size: 35px;
         }
         .app-1-info{
             background-color: #2d692f;
@@ -631,30 +644,72 @@
             margin: 20px 10px;
         }
         .app-1-info h1{
+            font-size: 35px;
             font-weight: bold;
         }
         .app-1-info p{
-            font-size: 25px;
+            font-size: 20px;
             text-align: left;
             margin-top: 10px;
         }
-        .section{
+        .section-app-1-space{
             display: flex;
             flex-direction: column;
+            position: relative;
+            align-items: center;
+
         }
-        .section::before {
+        .section-app-1-space::before {
             content: '';
             position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 3px;
+            top: 0; 
+            margin-top: 10px;
+            left: 49.5%;
+            width: 3px; 
+            height: 80vh; 
             background-color: #2d692f;
             z-index: -1;
+            transform: translateX(50%);
+        }
+        .section-app-1{
+            border-top: 3px solid green;
+            color: rgb(255, 255, 255);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            font-weight:lighter;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 10px;
+            padding: 20px;
+            padding-top: 10px;
+            height: 80vh;
+            border-top: 2px solid green;
+            border-bottom: 2px solid green;
+            border-radius: 6px;     
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-app-1  h3{
+            background: #2d692f;
+            display: inline-block;
+            padding: 20px;
+            font-size: 50px;
+            border-radius: 6px;
+            color: white;
+            border-top: 3px solid yellow;
+            border-bottom: 3px solid yellow;
         }
         .milestone{
             background-color: #2d692f;
             margin: 30px 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .milestone h4{
+            font-size: 30px;
         }
 
 
@@ -672,62 +727,69 @@
 
 
     <!-- Header -->
-    <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo">
-                <img src="https://sis-pucu.phinma.edu.ph/image/login/logo_college.png" >
-                <a href="https://up.phinma.edu.ph/">
-                    <img src="http://up.phinma.edu.ph/wp-content/themes/phinma_ncr/assets/images/common/up-revised-logo.png">
-                </a>
-                <img src="https://www.phinma.edu.ph/wp-content/uploads/2022/07/PHINMA-Ed-Logo-2048x751.png" style="height: 10%; width: 10%;">
+    <div class="header">
+        <!-- Logo -->
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <img src="https://sis-pucu.phinma.edu.ph/image/login/logo_college.png" >
+                    <a href="https://up.phinma.edu.ph/">
+                        <img src="http://up.phinma.edu.ph/wp-content/themes/phinma_ncr/assets/images/common/up-revised-logo.png">
+                    </a>
+                    <img src="https://www.phinma.edu.ph/wp-content/uploads/2022/07/PHINMA-Ed-Logo-2048x751.png" style="height: 10%; width: 10%;">
+                </div>
             </div>
+        </nav>
+
+
+        <!-- List and its Contents -->
+        <div class="listbar">
+            <div class="list">
+                <ul>
+                    <li><a href="#">ABOUT</a>
+                        <div class="content">
+
+                            <a href="#history">HISTORY</a>
+
+                            <a href="#mission-and-vision">MISSION AND VISION</a>
+
+                            <a href="#our-values">OUR VALUES</a>
+
+                        </div>
+                    </li>
+                    <li><a href="#">ACADEMICS</a>
+                        <div class="content">
+                            <a href="#academic">ACADEMIC POLICIES</a>
+                        </div>
+                    </li>
+                    <li><a href="#">STUDENT SERVICE</a>
+                        <div class="content">
+                            <a href="#student-services">STUDENT SERVICES DETAILS</a>
+                        </div>
+                    </li>
+                    <li><a href="#">PEN STUDENT CODE OF CONDUCT</a>
+                        <div class="content">
+                            <a href="#pen">PEN STUDENT OF OFFENSES...</a>
+                        </div>
+                    </li>
+                    <li><a href="#">APPENDICES</a>
+                        <div class="content">
+                            <a href="#appendix1">ABOUT THE PHINMA GROUP</a>
+                            <a href="#appendix2">PHINMA GROUP'S MISSION</a>
+                            <a href="#appendix3">PHINMA TODAY</a>
+                            <a href="#appendix4">PHINMA GROUP OF COMPANIES</a>
+                            <a href="#appendix5">PEN SCHOOL ORG. CHART</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>  
         </div>
-    </nav>
 
-
-    <!-- List and its Contents -->
-    <div class="listbar">
-        <div class="list">
-            <ul>
-                <li><a href="#">ABOUT</a>
-                    <div class="content">
-
-                        <a href="#history">HISTORY</a>
-
-                        <a href="#mission-and-vision">MISSION AND VISION</a>
-
-                        <a href="#our-values">OUR VALUES</a>
-
-                    </div>
-                </li>
-                <li><a href="#">ACADEMICS</a>
-                    <div class="content">
-                        <a href="#academic">ACADEMIC POLICIES</a>
-                    </div>
-                </li>
-                <li><a href="#">STUDENT SERVICE</a>
-                    <div class="content">
-                        <a href="#student-services">STUDENT SERVICES DETAILS</a>
-                    </div>
-                </li>
-                <li><a href="#">PEN STUDENT CODE OF CONDUCT</a>
-                    <div class="content">
-                        <a href="#pen">PEN STUDENT OF OFFENSES...</a>
-                    </div>
-                </li>
-                <li><a href="#">APPENDICES</a>
-                    <div class="content">
-                        <a href="#appendix1">ABOUT THE PHINMA GROUP</a>
-                        <a href="#appendix2">PHINMA GROUP'S MISSION</a>
-                        <a href="#appendix3">PHINMA TODAY</a>
-                        <a href="#appendix4">PHINMA GROUP OF COMPANIES</a>
-                        <a href="#appendix5">PEN SCHOOL ORG. CHART</a>
-                    </div>
-                </li>
-            </ul>
-        </div>  
     </div>
+    
 
+
+    
 
     <!-- Background -->
     <div class="background">
@@ -1359,139 +1421,141 @@
                         <p>With the establishment of PHINMA came the birth of a business organization that would give rise to a culture of excellence—one that would touch the lives of millions of Filipinos and contribute to the development of Filipino enterprise, as well as the upliftment of the average person's quality of life.</p>
                     </div>
             
-            
-                    <div class="section">
-                        <h3>Milestones</h3>
-                       
-                        <div class="milestone">
-                            <h4>1956</h4>
-                            <p>Ramon V. del Rosario, Sr., Filamon C. Rodriguez, and Ernesto O. Escoler form PHINMA, then the first Filipino-managed investment firm.<br>
-                            The new company purchased Cabu Portland Cement Company in Bocnota, La Union. It was renamed Bocnotan Cement Corporation (BCC) using the brand name Union Cement. Since then, BCC has become the foremost producer of cement in the Philippines, together with its subsidiary-sister plants.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1959</h4>
-                            <p>PHINMA established an oil refinery in Rosario, Cavite. Filoli's marketing strategy of "Filipino First" inspired a nationalistic sense of consumerism among Filipinos to purchase Filoli.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1963</h4>
-                            <p>PHINMA ventured into GI sheets manufacturing, through Bocnotan Consolidated Industries Incorporated, with its steel plant in Poro Point, La Union. This spawned a galvanizing plant known as Union Galvestrel Corporation.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1969</h4>
-                            <p>Trans-Asia Oil and Mineral Company was formed to undergo exploration in the northwest seas of Palawan. Success in this endeavor has snowballed into other energy projects such as coal mining and energy generation.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1971</h4>
-                            <p>PHINMA ventured into the paper and packaging business with the United Pulp and Paper Company (UPPC) in Calumpit, Bulacan. The plant produced sack Kraft paper, for use in the cement packaging business. UPPC has continuously upgraded their production capacity and has increased revenues significantly.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>1984</h4>
-                            <p>Community Relations, COMREL, was formed to reach out to the communities where PHINMA plants are located, and to coordinate with local government units in order to improve Filipino livelihood. COMREL is PHINMA’s example of good corporate citizenship and community building.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1987</h4>
-                            <p>PHINMA Realty Corporation and FC Development Corp merged into a new company: PHINMA Property Holdings Corporation. With housing projects being prosperous, other businesses evolved including property management and sanitation.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>1989</h4>
-                            <p>Through the efforts of Mr. Ramon del Rosario, Jr., PHINMA partnered with A. Soriano Co. and the Benguet Mining Corporation to launch the Asian Savings Bank into a commercial banking institution in 1989, later named Asian Bank in 1990.</p>
-                        </div>
-                       
-                        <div class="milestone">
-                            <h4>1995</h4>
-                            <p>PHINMA constructed the Don Filemon C. Rodriguez Training Center in Tagaytay City under a spin-off company named PHINMA Group Development Foundation. The Training Center houses facilities for management as well as technical training over 2.7 hectares. It has 52-room trainees quarters for overnight sessions. The center is also open to non-PHINMA companies.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>1996</h4>
-                            <p>PHINMA's corporate social responsibility program, which is run through PHINMA COMREL, fostered the communal spirit along with the individual’s sense of responsibility to the community, as well as promoted self-sufficiency in the immediate vicinity. For this, PHINMA received the Corporate Citizenship Excellence Award from the Philippine Business for Social Progress.</p>
-                        </div>  
-            
-            
-                        <div class="milestone">
-                            <h4>1997</h4>
-                            <p>Trans-Asia Power Generation Corporation, the joint venture project of Trans-Asia Oil and Hi-Cement Corporation, commissioned its 52 MW power plant in Bulacan.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>1998</h4>
-                            <p>Bacnotan Consolidated Industries, Inc. (BCII) and Atlas Cement Corporation (ACC) entered into an agreement with Holderbank for a strategic partnership in the cement business of PHINMA.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>1999</h4>
-                            <p>United Pulp and Paper Company, Inc. inaugurated its second paper mill amounting to ₱6 Billion, making it the biggest and most advanced paper manufacturing facility in the Philippines. This was a joint venture project between PHINMA and Thailand’s Siam Cement Group, the largest industrial conglomerate in Thailand.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>2000</h4>
-                            <p>The three cement companies of PHINMA, namely Bacnotan Cement Corporation, Hi-Cement Corporation, and Davao Union Cement Corporation, merged into UNION Cement Corporation in an effort to integrate and improve coordination among the plants.</p>
-                        </div>
-            
-            
-                       
-                        <div class="milestone">
-                            <h4>2001</h4>
-                            <p>PHINMA and other subsidiaries/sister companies moved into the new PHINMA Plaza in Rockwell Center, Makati.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>2003</h4>
-                            <p>Siam Pulp and Paper Company, PHINMA’s strategic partner in the paper business, agreed to infuse new equity that completed the buy-out of United Pulp and Paper Company.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>2004</h4>
-                            <p>PHINMA sold its investment in the Cement Business, marking the end of more than four decades of industrial primacy and the beginning of a new journey into the services sector. Also, in the same year, PHINMA and BCII acquired a controlling interest in Araullo University, its maiden investment in the Education sector.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>2006</h4>
-                            <p>PHINMA celebrated its 50th year. As part of a five-university system goal, PHINMA acquired Cagayan de Oro College. Demonstrating its zeal in providing affordable housing, PHINMA acquired the Philippine franchise of Microtel Inns & Suites. Through its wholly owned subsidiary, PHINMA Property Holdings Corp. (PPHC), the company also became a leader in affordable medium-rise housing in Metro Manila with more than 4,000 condo units.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>2007</h4>
-                            <p>PHINMA ventures into Business Process Outsourcing (BPO) with the following firms: PHINMA Finance and Accounting Outcomes Corporation (PHINMA F&A), and PHINMA Architecture and Engineering Outcomes Corporation (PHINMA A&E). PHINMA BPO companies provide offshore clientele with cost-effective and value-added offshore services.</p>
-                        </div>
-            
-            
-                        <div class="milestone">
-                            <h4>2009</h4>
-                            <p>PHINMA adds two more schools to the PHINMA Education Network (PEN). These are University of Rangarban and University of Iloilo. PEN now has four schools in the network.
-                                <br>
-            
-            
-                            PHINMA also adds Toon City Animation, Inc. to its group of BPO companies. Toon City provides outsource animation production services to major international studios. As a 15-year old studio providing traditional, Flash and 3D CGI (computer generated imagery) animation production services, Toon City has excelled at producing Feduver Animation, Direct to Video (DTV), TV series, and short programs for major clients such as Woh Diang, Nickelodeon, Werner Brox, and Universal Studios.</p>
+                    <div class="section-app-1-space">
+                        <div class="section-app-1">
+                            <h3>Milestones</h3>
+                           
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1956</h4>
+                                <p>Ramon V. del Rosario, Sr., Filamon C. Rodriguez, and Ernesto O. Escoler form PHINMA, then the first Filipino-managed investment firm.<br>
+                                The new company purchased Cabu Portland Cement Company in Bocnota, La Union. It was renamed Bocnotan Cement Corporation (BCC) using the brand name Union Cement. Since then, BCC has become the foremost producer of cement in the Philippines, together with its subsidiary-sister plants.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1959</h4>
+                                <p>PHINMA established an oil refinery in Rosario, Cavite. Filoli's marketing strategy of "Filipino First" inspired a nationalistic sense of consumerism among Filipinos to purchase Filoli.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1963</h4>
+                                <p>PHINMA ventured into GI sheets manufacturing, through Bocnotan Consolidated Industries Incorporated, with its steel plant in Poro Point, La Union. This spawned a galvanizing plant known as Union Galvestrel Corporation.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1969</h4>
+                                <p>Trans-Asia Oil and Mineral Company was formed to undergo exploration in the northwest seas of Palawan. Success in this endeavor has snowballed into other energy projects such as coal mining and energy generation.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1971</h4>
+                                <p>PHINMA ventured into the paper and packaging business with the United Pulp and Paper Company (UPPC) in Calumpit, Bulacan. The plant produced sack Kraft paper, for use in the cement packaging business. UPPC has continuously upgraded their production capacity and has increased revenues significantly.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1984</h4>
+                                <p>Community Relations, COMREL, was formed to reach out to the communities where PHINMA plants are located, and to coordinate with local government units in order to improve Filipino livelihood. COMREL is PHINMA’s example of good corporate citizenship and community building.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1987</h4>
+                                <p>PHINMA Realty Corporation and FC Development Corp merged into a new company: PHINMA Property Holdings Corporation. With housing projects being prosperous, other businesses evolved including property management and sanitation.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1989</h4>
+                                <p>Through the efforts of Mr. Ramon del Rosario, Jr., PHINMA partnered with A. Soriano Co. and the Benguet Mining Corporation to launch the Asian Savings Bank into a commercial banking institution in 1989, later named Asian Bank in 1990.</p>
+                            </div>
+                           
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1995</h4>
+                                <p>PHINMA constructed the Don Filemon C. Rodriguez Training Center in Tagaytay City under a spin-off company named PHINMA Group Development Foundation. The Training Center houses facilities for management as well as technical training over 2.7 hectares. It has 52-room trainees quarters for overnight sessions. The center is also open to non-PHINMA companies.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1996</h4>
+                                <p>PHINMA's corporate social responsibility program, which is run through PHINMA COMREL, fostered the communal spirit along with the individual’s sense of responsibility to the community, as well as promoted self-sufficiency in the immediate vicinity. For this, PHINMA received the Corporate Citizenship Excellence Award from the Philippine Business for Social Progress.</p>
+                            </div>  
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1997</h4>
+                                <p>Trans-Asia Power Generation Corporation, the joint venture project of Trans-Asia Oil and Hi-Cement Corporation, commissioned its 52 MW power plant in Bulacan.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>1998</h4>
+                                <p>Bacnotan Consolidated Industries, Inc. (BCII) and Atlas Cement Corporation (ACC) entered into an agreement with Holderbank for a strategic partnership in the cement business of PHINMA.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>1999</h4>
+                                <p>United Pulp and Paper Company, Inc. inaugurated its second paper mill amounting to ₱6 Billion, making it the biggest and most advanced paper manufacturing facility in the Philippines. This was a joint venture project between PHINMA and Thailand’s Siam Cement Group, the largest industrial conglomerate in Thailand.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>2000</h4>
+                                <p>The three cement companies of PHINMA, namely Bacnotan Cement Corporation, Hi-Cement Corporation, and Davao Union Cement Corporation, merged into UNION Cement Corporation in an effort to integrate and improve coordination among the plants.</p>
+                            </div>
+                
+                
+                           
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>2001</h4>
+                                <p>PHINMA and other subsidiaries/sister companies moved into the new PHINMA Plaza in Rockwell Center, Makati.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>2003</h4>
+                                <p>Siam Pulp and Paper Company, PHINMA’s strategic partner in the paper business, agreed to infuse new equity that completed the buy-out of United Pulp and Paper Company.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>2004</h4>
+                                <p>PHINMA sold its investment in the Cement Business, marking the end of more than four decades of industrial primacy and the beginning of a new journey into the services sector. Also, in the same year, PHINMA and BCII acquired a controlling interest in Araullo University, its maiden investment in the Education sector.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>2006</h4>
+                                <p>PHINMA celebrated its 50th year. As part of a five-university system goal, PHINMA acquired Cagayan de Oro College. Demonstrating its zeal in providing affordable housing, PHINMA acquired the Philippine franchise of Microtel Inns & Suites. Through its wholly owned subsidiary, PHINMA Property Holdings Corp. (PPHC), the company also became a leader in affordable medium-rise housing in Metro Manila with more than 4,000 condo units.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: left; margin-right: 50%">
+                                <h4>2007</h4>
+                                <p>PHINMA ventures into Business Process Outsourcing (BPO) with the following firms: PHINMA Finance and Accounting Outcomes Corporation (PHINMA F&A), and PHINMA Architecture and Engineering Outcomes Corporation (PHINMA A&E). PHINMA BPO companies provide offshore clientele with cost-effective and value-added offshore services.</p>
+                            </div>
+                
+                
+                            <div class="milestone" style="text-align: right; margin-left: 50%">
+                                <h4>2009</h4>
+                                <p>PHINMA adds two more schools to the PHINMA Education Network (PEN). These are University of Rangarban and University of Iloilo. PEN now has four schools in the network.
+                                    <br>
+                
+                
+                                PHINMA also adds Toon City Animation, Inc. to its group of BPO companies. Toon City provides outsource animation production services to major international studios. As a 15-year old studio providing traditional, Flash and 3D CGI (computer generated imagery) animation production services, Toon City has excelled at producing Feduver Animation, Direct to Video (DTV), TV series, and short programs for major clients such as Woh Diang, Nickelodeon, Werner Brox, and Universal Studios.</p>
+                            </div>
                         </div>
                     </div>
+                    
                 </article>
             </div>
             
