@@ -208,7 +208,7 @@
         }
         .bg-text {
             position: absolute;
-            top: 25vh;
+            top: 30vh;
             left: 1%;
             right: 1%;
             color: white;
@@ -585,7 +585,7 @@
             margin: 100px; 
         }
         .pen-content h1{
-            text-align: left;
+            text-align: center;
             margin: 10px;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 40px;
@@ -624,7 +624,6 @@
         .appendices-content{
             color: rgb(0, 0, 0);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align: center;
             margin: 100px; 
         }
 
@@ -711,7 +710,118 @@
         .milestone h4{
             font-size: 30px;
         }
+        
 
+        /* Appendix 2-3 Container */
+        .app-2n3{
+            display: flex;
+        }
+
+        /* Appendix 2 */
+        .app-2{
+            margin: 50px;
+        }
+        .app-2 h1{
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 35px;  
+            margin: 10px;
+        }
+        .app-2-content{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;  
+            background-color:  #409242;
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            border: 10px solid #2d692f;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 50vh;
+        }
+
+        /* Appendix 3 */
+        .app-3{
+            margin: 50px;
+        }
+        .app-3 h1{
+            text-align: left;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 35px;  
+            margin: 10px;
+        }
+        .app-3-content{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;  
+            background-color:  #409242;
+            color: white;
+            padding: 20px;
+            border-radius: 6px;
+            border: 10px solid #2d692f;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 50vh;
+        }
+
+        /* Appendix 4 */
+        .app-4{
+            margin: 30px;
+            text-align: center;
+        }
+        .app-4-space{
+            display: flex;
+            flex-direction: column;
+        }
+        .app-4-list{
+            position: relative;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            border: 2px solid #2d692f;
+            margin: 20px 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .app-4-names{
+            display: flex;
+            position: absolute;
+            top: 100%;
+            padding: 5px;
+            background-color: #f1f1f1;
+            border-bottom: 1px solid yellow;
+            border-left: 2px solid #2d692f;
+            border-right: 2px solid #2d692f;
+            border-top: 2px solid #2d692f;
+            margin: 0 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 22px;
+            color: #222222;
+            transform: translateY(-10px);
+            visibility: hidden;
+            transition: margin-bottom 0.3s ease, opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+            opacity: 0;
+            z-index: 10;
+            border-radius: 0 0 6px 6px;
+            text-align: center;
+        }
+        .app-4-list:hover .app-4-names{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            border-bottom: 1px solid yellow;
+        }
+
+        /* Appendix 5 */
+        .app-5{
+            margin: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+        .app-5-info{
+            text-align: center;
+            font-size: 20px;
+        }
 
     </style>
 </head>
@@ -775,8 +885,7 @@
                     <li><a href="#">APPENDICES</a>
                         <div class="content">
                             <a href="#appendix1">ABOUT THE PHINMA GROUP</a>
-                            <a href="#appendix2">PHINMA GROUP'S MISSION</a>
-                            <a href="#appendix3">PHINMA TODAY</a>
+                            <a href="#appendix2-3">PHINMA GROUP'S MISSION & PHINMA TODAY</a>
                             <a href="#appendix4">PHINMA GROUP OF COMPANIES</a>
                             <a href="#appendix5">PEN SCHOOL ORG. CHART</a>
                         </div>
@@ -786,9 +895,6 @@
         </div>
 
     </div>
-    
-
-
     
 
     <!-- Background -->
@@ -1559,112 +1665,133 @@
                 </article>
             </div>
             
-            <!-- Appendix 2: Mission -->
-            <div id="appendix2" class="app-2">
-                <h1>Appendix 2: PHINMA Group's Mission</h1>
-                <article>
-                    <div class="section">
-                        <p>The PHINMA GROUP'S MISSION is to help build our Nation through competitive and well-managed business enterprises that enable Filipinos to attain a better quality of life. With effective management as our attractive edge, we aim to give Filipinos improved access to the essentials of a dignified life.</p>
-                       
-                        <p>We will focus our ongoing enterprises and seek new opportunities in pursuit of our Mission. We will build not only affordable and decent homes, but also wholesome communities in urban areas. We will offer not only affordable high quality education, but also a brighter future for globally competitive Filipino professionals and workers. We will explore opportunities in the energy sector to offer not only reliable and affordable power, but also more productive lives – particularly to communities in greatest need. We will offer attractive investment opportunities and sound investment advice to encourage capital formation. We will aggressively seek opportunities primarily in the services sector that will allow us to address the basic needs of our society, while being globally competitive and generating attractive stakeholder values.</p>
-            
-            
-                        <p>In pursuit of our Mission, we look to our tradition, our experience, our reputation and, above all, our people, as the principal factors that will enable us to achieve our lofty goals.</p>
-            
-            
-                        <p>We believe that a well-qualified and competitively compensated work force, treated with trust and respect, will be a highly motivated and productive partner in the pursuit of our goals. We shall continue to conduct ourselves according to the highest ideals of competence, patriotism, integrity and professionalism. The PHINMA Group believes that the process of self-improvement and innovation, and the quest for excellence, are never-ending tasks.</p>
-            
-            
-                        <p>The PHINMA Group shall forge strategic alliances with partners who share our values and concerns and who can provide capital, expertise, technology, market access and other strategic elements. As a general rule, the PHINMA Group shall invest in enterprises to the extent needed to support a continuing and meaningful management role.</p>
-            
-            
-                        <p>In focusing on providing for the basic needs of the Filipino through well-managed enterprises, the PHINMA Group shall demonstrate that private business can mutually serve the aspirations of shareholders and the needs of society.</p>
-                    </div>
-                </article>
+            <!-- Appendix 2 & 3 -->
+            <div id="appendix2-3" class="app-2n3">
+                <!-- Appendix 2: Mission -->
+                <div id="appendix2" class="app-2">
+                    <h1>Appendix 2: PHINMA Group's Mission</h1>
+                        <div class="app-2-content">
+                            <p>The PHINMA GROUP'S MISSION is to help build our Nation through competitive and well-managed business enterprises that enable Filipinos to attain a better quality of life. With effective management as our attractive edge, we aim to give Filipinos improved access to the essentials of a dignified life.</p>
+                            <br>
+                            <p>We will focus our ongoing enterprises and seek new opportunities in pursuit of our Mission. We will build not only affordable and decent homes, but also wholesome communities in urban areas. We will offer not only affordable high quality education, but also a brighter future for globally competitive Filipino professionals and workers. We will explore opportunities in the energy sector to offer not only reliable and affordable power, but also more productive lives – particularly to communities in greatest need. We will offer attractive investment opportunities and sound investment advice to encourage capital formation. We will aggressively seek opportunities primarily in the services sector that will allow us to address the basic needs of our society, while being globally competitive and generating attractive stakeholder values.</p>
+                            <br>
+                            <p>In pursuit of our Mission, we look to our tradition, our experience, our reputation and, above all, our people, as the principal factors that will enable us to achieve our lofty goals.</p>
+                            <br>
+                            <p>We believe that a well-qualified and competitively compensated work force, treated with trust and respect, will be a highly motivated and productive partner in the pursuit of our goals. We shall continue to conduct ourselves according to the highest ideals of competence, patriotism, integrity and professionalism. The PHINMA Group believes that the process of self-improvement and innovation, and the quest for excellence, are never-ending tasks.</p>
+                            <br>
+                            <p>The PHINMA Group shall forge strategic alliances with partners who share our values and concerns and who can provide capital, expertise, technology, market access and other strategic elements. As a general rule, the PHINMA Group shall invest in enterprises to the extent needed to support a continuing and meaningful management role.</p>
+                            <br>
+                            <p>In focusing on providing for the basic needs of the Filipino through well-managed enterprises, the PHINMA Group shall demonstrate that private business can mutually serve the aspirations of shareholders and the needs of society.</p>
+                        </div>
+                </div>
+
+                <!-- Appendix 3: PHINMA Today -->
+                <div id="appendix3" class="app-3">
+                    <h1>Appendix 3: PHINMA Today</h1>
+                    <article>
+                        <div class="app-3-content">
+                            <p>Changes in the Philippine business climate and the global economy have led the PHINMA Group to embark on a new direction. From a conglomerate involved in heavy industry and manufacturing, particularly in cement and paper, the company now believes that it will best serve the nation's and its stockholders' interest by focusing on the Filipinos' basic needs.</p>
+                            <br>
+                            <p>With effective management as its principal resource, the company believes it can contribute high-quality but affordable education, decent and affordable homes, reliable and affordable electricity, and other goods and services that touch people's lives daily.</p>
+                            <br>
+                            <p>Today, the PHINMA Group is pursuing opportunities in energy, low-cost housing, education, and financial services, and is considering investments in service-oriented businesses. To illustrate, the company laid the foundation of its education business in 2004 with the acquisition of the 7,000-student Araullo University in Cabanatuan City. Its low-cost housing subsidiary, PHINMA Property Holdings, has become the largest developer of low-cost, medium-rise condominiums. Its affiliate TA Oil & Energy has constructed a power plant that will supply the energy requirements of Guimaras province in the Visayas.</p>
+                            <br>
+                            <p>These companies make up a huge reservoir of potential contribution that the country would require to sustain its growth program. With its capabilities in energy development, power generation, education, low-cost housing, financial and management services, the PHINMA Group is well on its way to becoming a major player in the country's thrust toward social upliftment and economic progress—a familiar role envisioned by its founders since its establishment in 1956.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
             
-            <!-- Appendix 3: PHINMA Today -->
-            <div id="appendix3" class="app-3">
-                <h1>Appendix 3: PHINMA Today</h1>
-                <article>
-                    <div class="section">
-                        <p>Changes in the Philippine business climate and the global economy have led the PHINMA Group to embark on a new direction. From a conglomerate involved in heavy industry and manufacturing, particularly in cement and paper, the company now believes that it will best serve the nation's and its stockholders' interest by focusing on the Filipinos' basic needs.</p>
-            
-            
-                        <p>With effective management as its principal resource, the company believes it can contribute high-quality but affordable education, decent and affordable homes, reliable and affordable electricity, and other goods and services that touch people's lives daily.</p>
-            
-            
-                        <p>Today, the PHINMA Group is pursuing opportunities in energy, low-cost housing, education, and financial services, and is considering investments in service-oriented businesses. To illustrate, the company laid the foundation of its education business in 2004 with the acquisition of the 7,000-student Araullo University in Cabanatuan City. Its low-cost housing subsidiary, PHINMA Property Holdings, has become the largest developer of low-cost, medium-rise condominiums. Its affiliate TA Oil & Energy has constructed a power plant that will supply the energy requirements of Guimaras province in the Visayas.</p>
-            
-            
-                        <p>These companies make up a huge reservoir of potential contribution that the country would require to sustain its growth program. With its capabilities in energy development, power generation, education, low-cost housing, financial and management services, the PHINMA Group is well on its way to becoming a major player in the country's thrust toward social upliftment and economic progress—a familiar role envisioned by its founders since its establishment in 1956.</p>
-                    </div>
-                </article>
-            </div>
             
             <!-- Appendix 4: Group of Companies -->
             <div id="appendix4" class="app-4">
                 <h1>Appendix 4: PHINMA Group of Companies</h1>
-                <article>
-                    <div class="section">
+                <div class="app-4-space">
+
+                    
+                    <div class="app-4-list">
                         <h3>Business Process Outsourcing</h3>
-                        <ul>
-                            <li>The PHINMA Finance and Accounting Outsource Corp.</li>
-                            <li>The PHINMA Architecture and Engineering Outsource Corp.</li>
-                            <li>Toon City Animation Inc.</li>
-                        </ul>
-            
-            
-                        <h3>Education</h3>
-                        <ul>
-                            <li>Araullo University</li>
-                            <li>Cagayan De Oro College</li>
-                            <li>University of Pangasinan</li>
-                            <li>University of Iloilo</li>
-                        </ul>
-            
-            
-                        <h3>Energy</h3>
-                        <ul>
-                            <li>Trans Asia Oil and Energy Development Corporation</li>
-                            <li>Trans Asia Power Generation Corporation</li>
-                            <li>Trans Asia Renewable Energy Corporation</li>
-                            <li>Trans Asia Karang Besar Petroleum Corporation</li>
-                            <li>CIP II Power Corporation</li>
-                            <li>Trans Asia Gold and Minerals Development Corporation</li>
-                        </ul>
-            
-            
-                        <h3>Financial Services</h3>
-                        <ul>
-                            <li>AB Capital and Investment Corporation</li>
-                            <li>AB Capital Securities, Inc.</li>
-                            <li>Stock Transfer Services, Inc.</li>
-                            <li>T-O Insurance Brokers, Inc.</li>
-                        </ul>
-            
-            
-                        <h3>Foundation</h3>
-                        <ul>
-                            <li>PHINMA Foundation, Inc.</li>
-                        </ul>
-            
-            
-                        <h3>Property & Shelter</h3>
-                        <ul>
-                            <li>PHINMA Property Holdings Corporation</li>
-                            <li>Microtel Development Corporation</li>
-                            <li>Microtel Inns & Suites (Pilipinas), Inc.</li>
-                        </ul>
-            
-            
-                        <h3>Roofing</h3>
-                        <ul>
-                            <li>Union Galvasteel Corporation</li>
-                        </ul>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• The PHINMA Finance and Accounting Outsource Corp.</li>
+                                <li>• The PHINMA Architecture and Engineering Outsource Corp.</li>
+                                <li>•Toon City Animation Inc.</li>
+                            </ul>
+                        </span>
                     </div>
-                </article>
+            
+                    <div class="app-4-list">
+                        <h3>Education</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• Araullo University</li>
+                                <li>• Cagayan De Oro College</li>
+                                <li>• University of Pangasinan</li>
+                                <li>• University of Iloilo</li>
+                            </ul>
+                        </span>
+                    </div>
+            
+                    <div class="app-4-list">
+                        <h3>Energy</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• Trans Asia Oil and Energy Development Corporation</li>
+                                <li>• Trans Asia Power Generation Corporation</li>
+                                <li>• Trans Asia Renewable Energy Corporation</li>
+                                <li>• Trans Asia Karang Besar Petroleum Corporation</li>
+                                <li>• CIP II Power Corporation</li>
+                                <li>• Trans Asia Gold and Minerals Development Corporation</li>
+                            </ul>
+                        </span>
+                    </div>
+                        
+                    <div class="app-4-list">
+                        <h3>Financial Services</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• AB Capital and Investment Corporation</li>
+                                <li>• AB Capital Securities, Inc.</li>
+                                <li>• Stock Transfer Services, Inc.</li>
+                                <li>• T-O Insurance Brokers, Inc.</li>
+                            </ul>
+                        </span>
+                    </div>
+            
+                    <div class="app-4-list">
+                        <h3>Foundation</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• PHINMA Foundation, Inc.</li>
+                            </ul>
+                        </span>
+                    </div>
+            
+                    <div class="app-4-list">
+                        <h3>Property & Shelter</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• PHINMA Property Holdings Corporation</li>
+                                <li>• Microtel Development Corporation</li>
+                                <li>• Microtel Inns & Suites (Pilipinas), Inc.</li>
+                            </ul>
+                        </span>
+                    </div>
+                        
+                    <div class="app-4-list">
+                        <h3>Roofing</h3>
+                        <span class="app-4-names">
+                            <ul>
+                                <li>• Union Galvasteel Corporation</li>
+                            </ul>
+                        </span>
+                        
+                    </div>
+
+                </div>
             </div>
+            </div>
+
             
             <!-- Appendix 5: Chart -->
             <div id="appendix5" class="app-5">
@@ -1681,6 +1808,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        margin: 30px;
                     }
                     .level {
                         display: flex;
@@ -1695,6 +1823,8 @@
                         margin: 5px;
                         text-align: center;
                         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                        font-size: 25px;
+                        font-weight: bold;
                     }
                     .connector {
                         width: 2px;
@@ -1712,6 +1842,9 @@
             
             
                 <h1 style="text-align: center;">PEN School Organizational Chart</h1>
+                <div class="app-5-info">
+                    <a>"This organizational chart represents the general structure of all PEN school. There may be minor deviations from this structure in each school"</a>
+                </div>
                 <div class="chart">
                     <div class="level">
                         <div class="box">Board of Trustees</div>
