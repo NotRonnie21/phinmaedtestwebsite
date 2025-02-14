@@ -100,17 +100,18 @@
         }
         .navdiv{
             display: flex;
-            align-items:center;
+            align-items: center;
+            justify-content: center;
         }
         .logo{
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: 100%;
+            width: 45%;
         }
         .logo img{
-            height: 8vh;
+            height: 9vh;
             width: auto;
             background-color: white;
         }
@@ -843,10 +844,10 @@
             <div class="navdiv">
                 <div class="logo">
                     <img src="https://sis-pucu.phinma.edu.ph/image/login/logo_college.png" >
-                    <a href="https://up.phinma.edu.ph/">
+                    <a>
                         <img src="http://up.phinma.edu.ph/wp-content/themes/phinma_ncr/assets/images/common/up-revised-logo.png">
                     </a>
-                    <img src="https://www.phinma.edu.ph/wp-content/uploads/2022/07/PHINMA-Ed-Logo-2048x751.png" style="height: 10%; width: 10%;">
+                    <img src="https://www.phinma.edu.ph/wp-content/uploads/2022/07/PHINMA-Ed-Logo-2048x751.png" style="height: 10%; width: 25%;">
                 </div>
             </div>
         </nav>
@@ -856,7 +857,7 @@
         <div class="listbar">
             <div class="list">
                 <ul>
-                    <li><a href="#">ABOUT</a>
+                    <li><a>ABOUT</a>
                         <div class="content">
 
                             <a href="#history">HISTORY</a>
@@ -867,25 +868,25 @@
 
                         </div>
                     </li>
-                    <li><a href="#">ACADEMICS</a>
+                    <li><a>ACADEMICS</a>
                         <div class="content">
                             <a href="#academic">ACADEMIC POLICIES</a>
                         </div>
                     </li>
-                    <li><a href="#">STUDENT SERVICE</a>
+                    <li><a>STUDENT SERVICE</a>
                         <div class="content">
                             <a href="#student-services">STUDENT SERVICES DETAILS</a>
                         </div>
                     </li>
-                    <li><a href="#">PEN STUDENT CODE OF CONDUCT</a>
+                    <li><a>PEN STUDENT CODE OF CONDUCT</a>
                         <div class="content">
                             <a href="#pen">PEN STUDENT OF OFFENSES...</a>
                         </div>
                     </li>
-                    <li><a href="#">APPENDICES</a>
+                    <li><a>APPENDICES</a>
                         <div class="content">
                             <a href="#appendix1">ABOUT THE PHINMA GROUP</a>
-                            <a href="#appendix2-3">PHINMA GROUP'S MISSION & PHINMA TODAY</a>
+                            <a href="#appendix2-3">PHINMA GROUP'S MISSION & TODAY</a>
                             <a href="#appendix4">PHINMA GROUP OF COMPANIES</a>
                             <a href="#appendix5">PEN SCHOOL ORG. CHART</a>
                         </div>
@@ -1891,60 +1892,6 @@
     <!-- Java Code, please don't touch -->
 
 
-    <!--
-
-
-    ==OFF==
-
-
-    window.addEventListener("scroll", function() {
-            let navigatebar = document.querySelector(".navbar");
-            let logoContainer = document.querySelector(".logo");
-            let logoImages = document.querySelectorAll(".logo img");
-           
-            if (window.scrollY > 50) {
-                navigatebar.style.height = "9vh";
-                navigatebar.style.width = "100%";
-                navigatebar.style.transition = "height 0.3s ease";
-
-
-
-
-                logoContainer.style.height = "6vh";
-                logoContainer.style.display = "flex";
-
-
-
-
-                logoImages.forEach(img => {
-                    img.style.height = "6vh";
-                    img.style.width = "";
-                    img.style.transition = "height 0.3s ease";
-                    img.style.transform = "scale(0.9)";
-                });
-            } else {
-                navigatebar.style.height = "11vh";
-                logoContainer.style.height = "8vh";
-                logoImages.forEach(img => {
-                    img.style.height = "8vh";
-                    img.style.transform = "scale(1)";
-                });
-            }
-        });
-
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-            setTimeout(() => {
-                window.scrollTo(0, 0);
-            }, 0);
-        });
-   
-    -->
-
-
-
 
     <script>
 
@@ -1993,6 +1940,5 @@
 
 </body>
 </html>
-
 
 
